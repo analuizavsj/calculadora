@@ -7,15 +7,15 @@
 }
 
 .calculadora {
-    background-color:rgb(50, 43, 53);
+    background-color:#2D2A37;
     padding: 15px;
     border-radius: 10px;
 }
 
 /*botoes numeros*/
 .calculadora form input {
+   font-family: Arial; 
    color: aliceblue;
-   background-color: rgb(50, 43, 53);
    border: none;
    outline: none;
    width: 60px;
@@ -25,6 +25,25 @@
    margin: 10px;
 }
 
+.calculadora input[type="button"] {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+    font-size: 22px;
+    font-family: Rubik;
+}
+
+.calculadora input[type="button"].roxinho {
+    background: linear-gradient(0deg, #462878, #462878);
+}
+
+.calculadora input[type="button"].roxinhoclaro {
+    background: #7F45E2;
+}
+
+.calculadora input[type="button"].CE{
+    color:#7F45E2
+}
+
+
 form .painel {
     display: flex;
     justify-self: flex-end;
@@ -32,14 +51,14 @@ form .painel {
 }
 
 form .painel input {
-    background-color: rosybrown;
-    width: 100%;
+    background-color: #2D2A37;
+    width: 290px;
     height: 60px;
     border-radius: 10px;
     border: none;
     outline: none;
     text-align: right;
-    font-size: 24px;
+    font-size: 43px;
     padding: 10px;
     box-shadow: none;
 }
@@ -51,14 +70,14 @@ form .equacao {
 }
 
 form .equacao input {
-    background-color: rosybrown;
-    width: 100%;
+    background-color: #2D2A37;
+    width: 290px;
     height: 15px;
     border-radius: 10px;
     border: none;
     outline: none;
     text-align: right;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px;
     box-shadow: none;
 }
