@@ -24,34 +24,33 @@
             <input type="text" name="painel">
     </div>
     <div>
-            <input type="button" value="CE" class="CE">
-            <input type="button" value="C" class="roxinho">
-            <input type="button" value="%" class="roxinho">
-            <input type="button" value="÷" class="roxinho">
+            <input type="button" value="CE" class="CE" onclick="equacao.value = ' ' ; painel.value = ' '">
+            <input type="button" value="C" class="roxinho" onclick="equacao.value = equacao.value.toString().slice(0,-1)">
+            <input type="button" value="%" class="roxinho" onclick="equacao.value += '%' ">
+            <input type="button" value="÷" class="roxinho" onclick="equacao.value += '÷' ">
     </div>
     <div>
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="x" class="roxinho">
+            <input type="button" value="7" onclick="equacao.value += '7' ">
+            <input type="button" value="8" onclick="equacao.value += '8' ">
+            <input type="button" value="9" onclick="equacao.value += '9' ">
+            <input type="button" value="x" class="roxinho" onclick="equacao.value += '*' ">
     </div>
     <div>
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="-" class="roxinho">
+            <input type="button" value="4" onclick="equacao.value += '4' ">
+            <input type="button" value="5" onclick="equacao.value += '5' ">
+            <input type="button" value="6" onclick="equacao.value += '6' ">
+            <input type="button" value="-" class="roxinho" onclick="equacao.value += '-' ">
     </div>
     <div>
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="+" class="roxinho">
+            <input type="button" value="1" onclick="equacao.value += '1' ">
+            <input type="button" value="2" onclick="equacao.value += '2' ">
+            <input type="button" value="3" onclick="equacao.value += '3' ">
+            <input type="button" value="+" class="roxinho" onclick="equacao.value += '+' ">
     </div>  
     <div>
-            <input type="button" value="+/-">
-            <input type="button" value="0">
-            <input type="button" value=",">
-            <input type="button" value="=" class="roxinhoclaro">
+            <input type="button" value="0" onclick="equacao.value += '0' ">
+            <input type="button" value="," onclick="equacao.value += ',' ">
+            <input type="button" value="=" class="roxinhoclaro" onclick="painel.value = eval(equacao.value) ">
     </div>
     </form>
     

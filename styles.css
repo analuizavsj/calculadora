@@ -41,10 +41,15 @@
 
 .calculadora input[type="button"].roxinhoclaro {
     background: #7F45E2;
+    width: 134px;
 }
 
 .calculadora input[type="button"].CE{
     color:#7F45E2
+}
+
+.calculadora input[type="button"]:hover {
+    color:#8b8df8
 }
 
 
